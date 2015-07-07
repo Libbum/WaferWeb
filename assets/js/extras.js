@@ -9,10 +9,18 @@ $("#contactForm").submit(function(e) {
 					$(this).html(data);
 				}).animate({'opacity': 1}, 500);
 				if (~data.indexOf('Thanks')) {
-					$('#contactForm')[0].reset();
+					$('#contactForm')[0].reset(); //clear the form if information was sent
 				}
            }
          });
 
-    e.preventDefault(); // avoid to execute the actual submit of the form.
+    e.preventDefault(); // don't execute the actual form submission.
+});
+
+$("#contact-icon").click(function() {
+    var offset = 20; //Offset of 20px
+
+    $('html, body').animate({
+        scrollTop: $("#three").offset().top + offset
+    }, 1000);
 });
