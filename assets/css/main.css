@@ -1715,15 +1715,10 @@
 	}
 	
 	.verify-img {
-		display: inline-block;
-		padding-right: 20px;
-		vertical-align: middle;
-	}
-	
-	.verify {
-		display: inline-block;
-		width: 130px;
+		margin-top: 5px !important;
 		margin-bottom: 20px !important;
+		border-radius: 0.35em;
+		border: solid 2px transparent;
 	}
 
 /* Section/Article */
@@ -2101,6 +2096,10 @@
 
 			.image.avatar img {
 				width: 100%;
+			}
+			
+			.response {
+				min-height: 60px;
 			}
 
 /* List */
